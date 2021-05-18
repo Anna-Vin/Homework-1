@@ -1,0 +1,8 @@
+div {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    background-image: url(https://www.w3.org/Icons/w3c_evangelist.png);
+    background-size: 25%;
+    background-repeat: round;
+}

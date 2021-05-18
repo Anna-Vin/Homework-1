@@ -1,0 +1,26 @@
+body {
+    font-weight: bold;
+    line-height: 2.3rem;
+    font-size: 1rem;
+    background-image: url(https://www.meme-arsenal.com/memes/f8600ffab3d1ce81925037d25746f32d.jpg);
+}
+
+h1 {
+    color: #666999;
+}
+
+h2 {
+    color: teal;
+}
+
+h4 {
+    color: rgb(130, 34, 22)
+}
+
+p {
+    color: hsl(0, 10%, 50%)
+}
+
+span {
+    color: rgba(22, 133, 44, 0.7);
+}

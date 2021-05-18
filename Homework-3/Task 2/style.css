@@ -1,0 +1,11 @@
+body {
+    opacity: 0.3;
+    /* color: rgba(0, 0, 255, 0.3); */
+}
+
+p {
+    color: blue;
+    /* color: #0000ff;
+    color: hsl(240, 100%, 50%);
+    color: rgb(0, 0, 255); */
+}

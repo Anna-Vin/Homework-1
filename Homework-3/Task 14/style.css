@@ -1,0 +1,41 @@
+table {
+    table-layout: fixed;
+    width: 200px;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+.blue {
+    background-color: blue;;
+}
+
+.red {
+    background-color: red;
+}
+
+#round {
+    border-radius: 50%;
+}
+
+.b-right {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.b-top {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.b-bottom {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.b-left-top {
+    border-top-left-radius: 50%;
+}
+
+.b-left-bottom {
+    border-bottom-left-radius: 50%;
+}
