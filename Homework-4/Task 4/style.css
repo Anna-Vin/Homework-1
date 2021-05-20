@@ -1,0 +1,21 @@
+.red-left {
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
+
+.center {
+    display: inline-block;
+    width: 40%;
+    background-color: white;
+}
+
+.red-right {
+    display: inline-block;
+    width: 30%;
+    float: right;
+}
+
+.wrapper {
+    background-color: red;
+}

@@ -1,0 +1,37 @@
+div {
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.blue {
+    background-color: blue;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+
+.black {
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+hr {
+    margin-top: 120px;
+}

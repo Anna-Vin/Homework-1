@@ -1,0 +1,40 @@
+body {
+    width: 30vw;
+}
+
+div {
+    display: inline-block;
+    color: white;
+}
+
+.red-left {
+    width: 20%;
+    float: left;
+}
+
+.green-wrapper {
+    width:80%;
+}
+
+.blue-right {
+    float: right;
+    width: 25%;
+}
+
+.black-wrapper {
+    width: 75%;
+}
+
+.violet-right {
+    width: 30%;
+    float: right;
+}
+
+.cyan-left {
+    width: 30%;
+    float: left;
+}
+
+.yellow-center {
+    width: 40%;
+}

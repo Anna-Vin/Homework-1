@@ -1,0 +1,26 @@
+body > div {
+    list-style-type: upper-alpha;
+    margin-left: 20px;
+}
+
+span, div div {
+    border: solid 2px black;
+    width: 50px;
+    height: 50px;
+}
+
+.item {
+    display: list-item;
+}
+
+.item:first-child span:nth-child(2) {
+    display: block;
+}
+
+.item:nth-child(2) div:nth-child(2) {
+    display: inline;
+}
+
+.iblock {
+    display: inline-block;
+}

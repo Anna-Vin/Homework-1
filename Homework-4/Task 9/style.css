@@ -1,0 +1,14 @@
+.level1-list, .level2-list {
+    list-style: none;
+    cursor: pointer;
+}
+
+.level1-list li:nth-child(2):hover .level2-list {
+    display: block;
+}
+
+.level2-list {
+    display: none;
+    background-color: red;
+    width: 70px;
+}

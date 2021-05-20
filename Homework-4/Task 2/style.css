@@ -1,0 +1,26 @@
+div {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.green-right {
+    background-color: green;
+    width: 20%;
+    float: right;
+}
+
+.red-left {
+    background-color: red;
+    width: 80%;
+}
+
+.green-left {
+    background-color: green;
+    width: 20%;
+    float: left;
+}
+
+.red-center {
+    background-color: red;
+    width: 80%;
+}
