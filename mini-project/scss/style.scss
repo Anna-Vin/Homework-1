@@ -1,0 +1,23 @@
+@import "helpers/mixins";
+@import "helpers/vars";
+
+@import "base/normalize";
+@import "base/bootstap-grid";
+@import "base/base";
+
+
+@import "partials/header";
+@import "partials/promo";
+@import "partials/about";
+@import "partials/hits";
+@import "partials/new";
+@import "partials/gallery";
+@import "partials/footer";
+@import "partials/contacts";
+@import "partials/basket";
+@import "partials/order";
+@import "partials/catalog";
+@import "partials/categories";
+
+
+

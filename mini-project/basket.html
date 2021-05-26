@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="main container" style="text-align: center;">
+        <header class="header">
+            <a href="/index.html">
+                <img src="./img/laptop.png" alt="logo" class="logo">
+            </a>
+            <div class="nav-wrapper">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item">
+                            <a href="/categories.html">Catalog</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <div class="dropdown">
+                                <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+                                <label for="my-dropdown" data-toggle="dropdown">
+                                    Categories
+                                </label>
+                                <ul>
+                                    <li><a href="/catalog.html">Computers</a></li>
+                                    <li><a href="/catalog.html">TV & video</a></li>
+                                    <li><a href="/catalog.html">Audio</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="./contacts.html">Contacts</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="/basket.html">Cart</a>
+                            <span class="badge">3</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-menu">
+                    <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check"
+                        class="burger"></label>
+                    <nav id="navigation1" class="burger-navigation">
+                        <ul>
+                            <li class="navigation__list-item"><a href="/categories.html">Catalog</a></li>
+                            <li class="navigation__list-item">
+                                <div class="dropdown">
+                                    <input type="checkbox" id="my-dropdown2" value="" name="my-checkbox">
+                                    <label for="my-dropdown2" data-toggle="dropdown">
+                                        Categories
+                                    </label>
+                                    <ul>
+                                        <li><a href="/catalog.html">Computers</a></li>
+                                        <li><a href="/catalog.html">TV & video</a></li>
+                                        <li><a href="/catalog.html">Audio</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="navigation__list-item"><a href="/contacts.html">Contacts</a></li>
+                            <li class="navigation__list-item"><a href="/basket.html">Cart</a> <span class="badge">3</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <h1>Your Cart</h1>
+        <section class="basket row">
+            <div class="basket-item col-12 col-lg-8">
+                <img src="./img/headphones_PNG101950.png" alt="headphones">
+                <div class="desc col-12 col-md-8">
+                    <p>Price <br> 666$ </p>
+                    <p>Count <br> 1 </p>
+                    <p>Sum <br> 666$ </p>
+                    <a href="#"><img src="./img/delete.png" alt="trash" class="delete"></a>
+                </div>
+            </div>
+            <div class="basket-item col-12 col-lg-8">
+                <img src="./img/laptop_PNG101819.png" alt="headphones">
+                <div class="desc col-12 col-md-8">
+                    <p>Price <br> 666$ </p>
+                    <p>Count <br> 2 </p>
+                    <p>Sum <br> 1332$ </p>
+                    <a href="#"><img src="./img/delete.png" alt="trash" class="delete"></a>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <a href="/order.html" class="button order">Order</a>     
+    </div>
+</body>
+
+</html>

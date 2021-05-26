@@ -1,0 +1,255 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .logo {
+        width: 50px;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+
+    .navigation__list-item a {
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-mint;
+        }
+    }
+
+    .badge {
+        text-align: center;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: $color-mint;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 50%;
+    }
+}
+
+
+
+// DropDown
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+  }
+  
+  .dropdown > label,
+  .dropdown > a[role="button"] {
+    padding: 6px 15px;
+    line-height: 1.5em;
+    cursor: pointer;
+    // text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
+  .dropdown > label:after,
+  .dropdown > a[role="button"]:after {
+    content: "\25BC";
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .dropdown > ul {
+    position: absolute;
+    z-index: 9999;
+    display: block;
+    left: -100vw;
+    top: calc(1.5em + 1px);
+    background: #fff;
+    padding: 6px 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  }
+  
+  .dropdown > ul a {
+    display: block;
+    padding: 6px 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown > ul a:hover,
+  .dropdown > ul a:focus {
+    background: #ececec;
+  }
+  
+  .dropdown > input[type="checkbox"]:checked ~ ul,
+  .dropdown > ul:target {
+    left: 0;
+  }
+  
+  .dropdown > [type="checkbox"]:checked + label:after,
+  .dropdown > ul:target ~ a:after {
+    content: "\25B2";
+  }
+  
+  .dropdown a.close {
+    display: none;
+  }
+  
+  .dropdown > ul:target ~ a.close {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-indent: -100vw;
+    z-index: 1000;
+  }
+
+
+  
+// Burger menu button
+
+.navigation {
+    display: none;
+
+    @include screen(md) {
+        display: block;
+    }
+
+    &__list-item {
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+            // text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+.burger-menu {
+
+    @include screen(md) {
+        display: none;
+    }
+
+    $burger--thickness: 4px;
+    .burger {
+        $width: 28px;
+
+        display: inline-block;
+        border: 0;
+        background: none;
+        outline: 0;
+        padding: 0;
+        cursor: pointer;
+
+        border-bottom: $burger--thickness solid currentColor;
+        width: $width;
+
+        transition: border-bottom 1s ease-in-out;
+        -webkit-transition: border-bottom 1s ease-in-out;
+
+        li a {
+            display: block;
+        }
+
+        // Fix for extra space in Firefox
+        &::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            border-bottom: $burger--thickness solid currentColor;
+            width: 100%;
+            margin-bottom: 5px;
+            transition: transform 0.5s ease-in-out;
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            border-bottom: $burger--thickness solid currentColor;
+            width: 100%;
+            margin-bottom: 5px;
+            transition: transform 0.5s ease-in-out;
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        }
+    }
+
+    .burger-check {
+        display: none;
+    }
+
+    .burger-check:checked ~ .burger {
+        border-bottom: $burger--thickness solid transparent;
+        transition: border-bottom 0.8s ease-in-out;
+        -webkit-transition: border-bottom 0.8s ease-in-out;
+
+        &:before {
+            transform: rotate(-405deg) translateY(1px) translateX(-3px);
+            -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+            transition: transform 0.5s ease-in-out;
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        }
+
+        &:after {
+            transform: rotate(405deg) translateY(-4px) translateX(-5px);
+            -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+            transition: transform 0.5s ease-in-out;
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        }
+    }
+
+    // * * * Navigation * * *
+    $navigation__transition: max-height 0.5s ease-in-out;
+
+    .burger-navigation {
+        position: absolute;
+        z-index: 1000000;
+        top: 70px;
+        right: 50%;
+        transform: translateX(50%);
+        display: none;
+        text-align: center;
+        transition: $navigation__transition;
+
+        ul li {
+            display: block;
+        }
+    }
+
+    .burger-check:checked ~ .burger-navigation {
+        display: block;
+        padding: 20px 0;
+        min-height: 140px;
+        min-width: 100%;
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+        box-shadow: 0 10px 20px rgba(0,0,0,.35);
+        background-color: $color-bg;
+        transition: $navigation__transition;
+    }
+
+}
+

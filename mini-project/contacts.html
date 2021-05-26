@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contacts</title>
+</head>
+
+<body>
+    <div class="main container">
+        <header class="header">
+            <a href="/index.html">
+                <img src="./img/laptop.png" alt="logo" class="logo">
+            </a>
+            <div class="nav-wrapper">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item">
+                            <a href="/categories.html">Catalog</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <div class="dropdown">
+                                <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+                                <label for="my-dropdown" data-toggle="dropdown">
+                                    Categories
+                                </label>
+                                <ul>
+                                    <li><a href="/catalog.html">Computers</a></li>
+                                    <li><a href="/catalog.html">TV & video</a></li>
+                                    <li><a href="/catalog.html">Audio</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="./contacts.html">Contacts</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="/basket.html">Cart</a>
+                            <span class="badge">3</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-menu">
+                    <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check"
+                        class="burger"></label>
+                    <nav id="navigation1" class="burger-navigation">
+                        <ul>
+                            <li class="navigation__list-item"><a href="/categories.html">Catalog</a></li>
+                            <li class="navigation__list-item">
+                                <div class="dropdown">
+                                    <input type="checkbox" id="my-dropdown2" value="" name="my-checkbox">
+                                    <label for="my-dropdown2" data-toggle="dropdown">
+                                        Categories
+                                    </label>
+                                    <ul>
+                                        <li><a href="/catalog.html">Computers</a></li>
+                                        <li><a href="/catalog.html">TV & video</a></li>
+                                        <li><a href="/catalog.html">Audio</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="navigation__list-item"><a href="/contacts.html">Contacts</a></li>
+                            <li class="navigation__list-item"><a href="/basket.html">Cartt</a> <span class="badge">3</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="contacts row">
+            <div class="col-12 col-md-6">
+                <h1>Call-center</h1>
+               <p><b>Mon-Fr:</b> 9:00 - 21:00</p> 
+               <p><b>Sat-Sun:</b> 9:00 - 18:00</p> 
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Phone numbers</h2>
+                <ul>
+                    <li><a href="">88005553535</a></li>
+                    <li><a href="">88005553535</a></li>
+                    <li><a href="">88005553535</a></li>
+                    <li><a href="">88005553535</a></li>
+                    <li><a href="">88005553535</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <h1>Our Shops</h1>
+        <section class="addresses row">
+            <div class="addresses__item col-12 col-lg-6">
+                <img src="./img/049-block-cubes-electronic-store-design-1.jpg" alt="shop">
+                <div class="desc">
+                    <h3>Address</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <h3>Working hours</h3>
+                    <p><b>Mon-Fr:</b> 9:00 - 21:00</p> 
+               <p><b>Sat-Sun:</b> 9:00 - 18:00</p> 
+                </div>
+            </div>
+            <div class="addresses__item col-12 col-lg-6">
+                <img src="./img/055-boutique-retail-electronic-shop-interior-design-3.jpg" alt="shop">
+                <div class="desc">
+                    <h3>Address</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <h3>Working hours</h3>
+                    <p><b>Mon-Fr:</b> 9:00 - 21:00</p> 
+               <p><b>Sat-Sun:</b> 9:00 - 18:00</p> 
+                </div>
+            </div>
+            <div class="addresses__item col-12 col-lg-6">
+                <img src="./img/20180525162732_27339.jpg" alt="shop">
+                <div class="desc">
+                    <h3>Address</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <h3>Working hours</h3>
+                    <p><b>Mon-Fr:</b> 9:00 - 21:00</p> 
+               <p><b>Sat-Sun:</b> 9:00 - 18:00</p> 
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h1>Keep in Touch</h1>
+            <div class="touch row">
+                <div class="col-12 col-lg-6">
+                    <img src="./img/map.jpg" alt="map">
+                </div>
+                <div class="col-12 col-lg-6 form-touch">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                    <button class="button">Send request</button>
+                </div>
+            </div>
+            <p>© Mini Project 2021. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

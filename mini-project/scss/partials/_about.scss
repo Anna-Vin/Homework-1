@@ -1,0 +1,47 @@
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin: 0 20px 20px 20px;
+    }
+    
+    .facts {
+        justify-content: space-between;
+
+        &__item {
+            padding: 30px;
+
+
+            &-icon {
+                width: 100px;
+                margin: 0 auto;
+                padding: 30px;
+                border-radius: 50%;
+            }
+
+        }
+
+        .dark {
+            background-color: rgb(24, 22, 22);
+            color: white; 
+
+            .facts__item-icon {
+                background-color: $color-mint;
+            }
+        }
+
+        .light {
+            background-color: $color-mint;
+
+            .facts__item-icon {
+                background-color: rgb(24, 22, 22);
+            }
+        }
+        
+    }
+}

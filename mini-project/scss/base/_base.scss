@@ -1,0 +1,38 @@
+body {
+    font: 14px/1.5 $font-main;
+    color: $color-font;
+    background-color: black;
+    
+    @include screen(md) {
+        padding: 40px;
+    }
+}
+
+.main.container {
+    min-height: 100vh;
+    background-color: $color-bg;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button {
+    display: inline-block;
+    background-color: black;
+    color: $color-mint;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 14px black;
+
+    &:hover {
+        color: rgb(189, 253, 210);
+        box-shadow: 0 6px 18px black;
+    }
+}

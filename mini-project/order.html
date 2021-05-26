@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Order</title>
+</head>
+<body>
+    <div class="main container" style="text-align: center;">
+    <header class="header">
+        <a href="/index.html">
+            <img src="./img/laptop.png" alt="logo" class="logo">
+        </a>
+        <div class="nav-wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="/categories.html">Catalog</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <div class="dropdown">
+                            <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+                            <label for="my-dropdown" data-toggle="dropdown">
+                                Categories
+                            </label>
+                            <ul>
+                                <li><a href="/catalog.html">Computers</a></li>
+                                <li><a href="/catalog.html">TV & video</a></li>
+                                <li><a href="/catalog.html">Audio</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="./contacts.html">Contacts</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/basket.html">Cart</a>
+                        <span class="badge">3</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check"
+                    class="burger"></label>
+                <nav id="navigation1" class="burger-navigation">
+                    <ul>
+                        <li class="navigation__list-item"><a href="/categories.html">Catalog</a></li>
+                        <li class="navigation__list-item">
+                            <div class="dropdown">
+                                <input type="checkbox" id="my-dropdown2" value="" name="my-checkbox">
+                                <label for="my-dropdown2" data-toggle="dropdown">
+                                    Categories
+                                </label>
+                                <ul>
+                                    <li><a href="/catalog.html">Computers</a></li>
+                                    <li><a href="/catalog.html">TV & video</a></li>
+                                    <li><a href="/catalog.html">Audio</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navigation__list-item"><a href="/contacts.html">Contacts</a></li>
+                        <li class="navigation__list-item"><a href="/basket.html">Cart</a> <span class="badge">3</span></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <h1>Checkout</h1>
+    <section class="order row">
+        <div class="form col-12 col-md-8">
+            <div class="code">
+                <label for="promo">PROMO/STUDENT CODE OR VOUCHERS</label><br>
+                <input type="text" id="promo"><br>
+                <a href="#" class="button">Apply code</a>
+            </div>
+            <div class="client-info">
+                <label for="name">Your name*</label><br>
+                <input type="text" id="name" required><br>
+                <label for="email">Email Address*</label><br>
+                <input type="email" required id="email"><br>
+                <label for="address">Delivery Address*</label><br>
+                <textarea  id="address" cols="23" rows="7" required></textarea><br>
+                <label for="">Payment type*</label><br>
+                <a href="#" class="button">Add credit card</a><br>
+                <span>We accept:</span><br>
+                <img src="./img/single.png" alt="cards">
+            </div>
+        </div>
+        <div class="order__info col-12 col-md-4">
+            <div class="info-header">
+                <h2>3 Items</h2>
+            </div>
+            <div class="info-body">
+                <div class="info-item">
+                    <img src="./img/headphones_PNG101950.png" alt="order">
+                    <div class="textfield">
+                        <span>666$</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Qty: 1</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="./img/laptop_PNG101819.png" alt="order">
+                    <div class="textfield">
+                        <span>666$</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Qty: 2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-footer">
+                <p>TOTAL TO PAY: 1998 $</p>
+            </div>
+        </div>
+    </section>
+    <a href="/" class="button place-order">Place order</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.promo {
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted $color-mint;
+
+    @include screen(lg) {
+        margin: 30px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .button {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include screen(lg) {
+            top: 120px;
+        }
+    }
+
+    b {
+        color: $color-mint;
+    }
+
+    .decor img {
+        width: 100px;
+        animation-name: rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .circle {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $color-mint;
+        z-index: 111;
+        margin: 0 30px;
+    }
+
+    .circle.white {
+        background-color: white;
+    }
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}

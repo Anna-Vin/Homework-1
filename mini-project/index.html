@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mini Project</title>
+</head>
+
+<body>
+    <div class="main container">
+        <header class="header">
+            <a href="/index.html">
+                <img src="./img/laptop.png" alt="logo" class="logo">
+            </a>
+            <div class="nav-wrapper">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item">
+                            <a href="/categories.html">Catalog</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <div class="dropdown">
+                                <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+                                <label for="my-dropdown" data-toggle="dropdown">
+                                    Categories
+                                </label>
+                                <ul>
+                                    <li><a href="/catalog.html">Computers</a></li>
+                                    <li><a href="/catalog.html">TV & video</a></li>
+                                    <li><a href="/catalog.html">Audio</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="./contacts.html">Contacts</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="/basket.html">Cart</a>
+                            <span class="badge">3</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-menu">
+                    <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check"
+                        class="burger"></label>
+                    <nav id="navigation1" class="burger-navigation">
+                        <ul>
+                            <li class="navigation__list-item"><a href="/categories.html">Catalog</a></li>
+                            <li class="navigation__list-item">
+                                <div class="dropdown">
+                                    <input type="checkbox" id="my-dropdown2" value="" name="my-checkbox">
+                                    <label for="my-dropdown2" data-toggle="dropdown">
+                                        Categories
+                                    </label>
+                                    <ul>
+                                        <li><a href="/catalog.html">Computers</a></li>
+                                        <li><a href="/catalog.html">TV & video</a></li>
+                                        <li><a href="/catalog.html">Audio</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="navigation__list-item"><a href="/contacts.html">Contacts</a></li>
+                            <li class="navigation__list-item"><a href="/basket.html">Cart</a> <span
+                                    class="badge">3</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="promo">
+            <div class="row">
+                <div class="col-12 col-lg-6 p-left">
+                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    <div class="decor">
+                        <img src="./img/diag.png" alt="diag">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit.</b> Autem ducimus quis molestias
+                        quisquam
+                        neque non adipisci voluptates et ut vero possimus tempore, asperiores velit exercitationem magni
+                        nisi enim. Voluptatum, voluptatibus.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="./img/pc.png" alt="pc">
+                    <a class="button" href="/categories.html">Shop now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h1>About us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, repellendus. Maxime nulla voluptatum
+                consequatur odit sed facilis, nisi adipisci velit impedit deserunt voluptatibus magni eius vitae, modi
+                officia obcaecati inventore!</p>
+            <div class="facts row">
+                <div class="facts__item  dark col-12 col-md-6 col-lg-3">
+                    <div class="facts__item-icon">
+                        <img src="./img/facts-1.png" alt="">
+                    </div>
+                    <h2>456</h2>
+                    <p>Employees</p>
+                </div>
+                <div class="facts__item  light col-12 col-md-6 col-lg-3">
+                    <div class="facts__item-icon">
+                        <img src="./img/facts-2.png" alt="">
+                    </div>
+                    <h2>155743</h2>
+                    <p>Customers</p>
+                </div>
+                <div class="facts__item  dark col-12 col-md-6 col-lg-3">
+                    <div class="facts__item-icon">
+                        <img src="./img/facts-3.png" alt="">
+                    </div>
+                    <h2>2334456</h2>
+                    <p>Purchase</p>
+                </div>
+                <div class="facts__item  light col-12 col-md-6 col-lg-3">
+                    <div class="facts__item-icon">
+                        <img src="./img/facts-4.png" alt="">
+                    </div>
+                    <h2>33</h2>
+                    <p>Shops</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hits">
+            <h1>Our hits</h1>
+            <div class="hits-container row">
+                <div class="hits_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/geforce.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="hits_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/cable.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="hits_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/headphones_PNG101950.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="hits_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/headphones_PNG101950.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="hits_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/geforce.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="hits_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/cable.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new">
+            <h1>What's new</h1>
+            <div class="new-container row">
+                <div class="new_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/tv_PNG39276.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="new_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/laptop_PNG101819.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="new_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/microphone_PNG101722.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="new_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/smartphone_PNG8536.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="new_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/tv_PNG39276.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+                <div class="new_item col-12 col-md-4 col-lg-2">
+                    <a href="#"><img src="./img/laptop_PNG101819.png" alt="item1"></a>
+                    <span class="price">666$</span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+                </div>
+            </div>
+            <a class="button" href="/categories.html">Shop now</a>
+        </section>
+
+        <section class="gallery">
+
+            <div id="s1"></div>
+            <div id="s2"></div>
+            <div id="s3"></div>
+            <div id="s4"></div>
+
+            <div class="slider">
+                <div>
+                    <img src="./img/photo-1539786774582-0707555f1f72.jfif" alt="img">
+                </div>
+                <div>
+                    <img src="./img/photo-1582581049302-657a3f7e1656.jfif" alt="img">
+                </div>
+                <div>
+                    <img src="./img//photo-1591196702597-062a87208fed.jfif" alt="img">
+                </div>
+                <div>
+                    <img src="./img/photo-1618247130379-980b9fe0df04.jfif" alt="img">
+                </div>
+            </div>
+
+            <div class="prevNext">
+                <div><a href="#s4"></a><a href="#s2"></a></div>
+                <div><a href="#s1"></a><a href="#s3"></a></div>
+                <div><a href="#s2"></a><a href="#s4"></a></div>
+                <div><a href="#s3"></a><a href="#s1"></a></div>
+            </div>
+
+            <div class="bullets">
+                <a href="#s1">1</a>
+                <a href="#s2">2</a>
+                <a href="#s3">3</a>
+                <a href="#s4">4</a>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <h1>Keep in Touch</h1>
+            <div class="touch row">
+                <div class="col-12 col-lg-6">
+                    <img src="./img/map.jpg" alt="map">
+                </div>
+                <div class="col-12 col-lg-6 form-touch">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                    <button class="button">Send request</button>
+                </div>
+            </div>
+            <p>© Mini Project 2021. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

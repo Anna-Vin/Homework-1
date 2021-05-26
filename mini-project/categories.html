@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Categories</title>
+</head>
+<body>
+    <div class="main container">
+    <header class="header">
+        <a href="/index.html">
+            <img src="./img/laptop.png" alt="logo" class="logo">
+        </a>
+        <div class="nav-wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="/categories.html">Catalog</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <div class="dropdown">
+                            <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+                            <label for="my-dropdown" data-toggle="dropdown">
+                                Categories
+                            </label>
+                            <ul>
+                                <li><a href="/catalog.html">Computers</a></li>
+                                <li><a href="/catalog.html">TV & video</a></li>
+                                <li><a href="/catalog.html">Audio</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="./contacts.html">Contacts</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="/basket.html">Cart</a>
+                        <span class="badge">3</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check"
+                    class="burger"></label>
+                <nav id="navigation1" class="burger-navigation">
+                    <ul>
+                        <li class="navigation__list-item"><a href="/categories.html">Catalog</a></li>
+                        <li class="navigation__list-item">
+                            <div class="dropdown">
+                                <input type="checkbox" id="my-dropdown2" value="" name="my-checkbox">
+                                <label for="my-dropdown2" data-toggle="dropdown">
+                                    Categories
+                                </label>
+                                <ul>
+                                    <li><a href="/catalog.html">Computers</a></li>
+                                    <li><a href="/catalog.html">TV & video</a></li>
+                                    <li><a href="/catalog.html">Audio</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navigation__list-item"><a href="/contacts.html">Contacts</a></li>
+                        <li class="navigation__list-item"><a href="/basket.html">Cart</a> <span class="badge">3</span></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="categories row">
+        <div class="category__item col-12 col-md-6 col-lg-4">
+            <a href="/catalog.html"><img src="./img/laptop_PNG101819.png" alt="comp"></a>
+            <h2>COMPUTERS</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, corrupti ipsam dicta beatae veniam voluptate accusantium suscipit neque esse eveniet delectus, enim laudantium eligendi, sint sunt. Veniam temporibus perferendis laborum?</p>
+        </div>
+        <div class="category__item col-12 col-md-6 col-lg-4">
+            <a href="/catalog.html"><img src="./img/tv_PNG39229.png" alt="tv"></a>
+            <h2>TV & VIDEO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad nemo cumque doloribus non, et est, ipsum maxime dolore tempore ea. Rerum natus repellat inventore eius dignissimos ab perspiciatis eveniet?</p>
+        </div>
+        <div class="category__item col-12 col-md-6 col-lg-4">
+            <a href="/catalog.html"><img src="./img/headphones_PNG101950.png" alt="headphones"></a>
+            <h2>AUDIO</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit corporis inventore quis, qui sed eos explicabo perferendis natus, doloribus harum minus quas! Consequuntur doloremque asperiores iusto necessitatibus cumque vitae.</p>
+        </div>
+    </div>
+
+    <section class="hits">
+        <h1>Our hits</h1>
+        <div class="hits-container row">
+            <div class="hits_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/geforce.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="hits_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/cable.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="hits_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/headphones_PNG101950.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="hits_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/headphones_PNG101950.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="hits_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/geforce.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="hits_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/cable.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="new">
+        <h1>What's new</h1>
+        <div class="new-container row">
+            <div class="new_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/tv_PNG39276.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="new_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/laptop_PNG101819.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="new_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/microphone_PNG101722.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="new_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/smartphone_PNG8536.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="new_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/tv_PNG39276.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+            <div class="new_item col-12 col-md-4 col-lg-2">
+                <a href="#"><img src="./img/laptop_PNG101819.png" alt="item1"></a>
+                <span class="price">666$</span>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit......</p>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

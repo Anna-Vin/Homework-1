@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+}
+
+.contacts {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px dotted $color-mint;
+
+    h1, h2 {
+        text-align: center;  
+    }
+
+    li {
+        position: relative;
+        padding: 3px;
+        margin-left: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:hover {
+            color: grey;
+        }
+    }
+
+    li::before {
+        content: '🕻';
+        color: $color-mint;
+        position: absolute;
+        left: -12px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+    }
+}
+
+.addresses {
+    padding: 0 20px;
+}
+
+.addresses__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px double black;
+
+    @include screen(lg) {
+        flex-direction: row;
+        border: none;
+    }
+
+    img {
+    
+        @include screen(lg) {
+            max-width: 50%;
+            margin-right: 50px;
+        }
+
+    }
+}
