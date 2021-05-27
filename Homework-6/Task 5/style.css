@@ -1,0 +1,39 @@
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0; 
+
+} 
+
+
+.dropdown-menu {
+    background: none;
+    border: none;
+}
+
+
+
+.nav-link {
+   padding: 20px;
+   padding-left: 16px !important;
+   min-width: calc(100% + 32px);
+   transform: translateX(-16px);
+}
+
+.nav-link:focus {
+    background-color: rgb(214, 214, 214);
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu {
+        background: white;
+        margin: 0;
+        border: 1px solid rgb(209, 206, 206);
+        box-shadow: 0 3px 10px rgb(196, 196, 196);
+    }
+
+    .nav-link {
+        padding: 20px !important;
+        min-width: 100%;
+        transform: translateX(0px);
+    }
+}
