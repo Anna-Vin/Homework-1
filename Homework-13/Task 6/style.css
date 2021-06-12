@@ -1,0 +1,24 @@
+.sweets ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 40px;
+    display: none;
+}
+
+.button {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button::before {
+    content: '▶ ';
+    font-size: 26px;
+}
+
+.sweets.open .button::before {
+    content: '▼ ';
+}
+
+.sweets.open ul {
+    display: block;
+}

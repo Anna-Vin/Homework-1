@@ -1,0 +1,12 @@
+.notification {
+    position: fixed;
+    z-index: 1000;
+    padding: 15px;
+    border: 1px solid darkslategray;
+    text-align: center;
+}
+
+.welcome {
+    background: darkgreen;
+    color: white;
+}
