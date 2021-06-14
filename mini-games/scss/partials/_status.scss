@@ -1,0 +1,96 @@
+.status {
+    margin-bottom: 20px;
+
+    align-items: center;
+
+    .help {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    
+    
+        .button {
+            border: 3px solid $color-font;
+            padding: 20px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+
+            &:hover {
+                text-shadow: none;
+                box-shadow: 0 0 10px #FFFFFF !important;
+            }
+
+            &.wasted {
+                border-color: rgb(167, 0, 0);
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 73px;
+                    height: 3px;
+                    background-color: rgb(167, 0, 0);
+                    position: absolute;
+                    left: -5px;
+                    top: 33px;
+                    transform: rotate(-60deg);
+
+                }
+            }
+        }
+    
+        .half {
+            font-size: 17.5px;
+            height: 80px;
+            padding: 20px 15px;
+        }
+    
+    }
+    
+    .logo {
+        text-align: center;
+        img {
+            max-width: 75%;
+        }
+    }
+    
+    .money {
+        ul {
+            display: flex;
+            flex-direction: column-reverse;
+            border: 2px solid $color-orange;
+            border-radius: 6px;
+           padding: 10px 0;
+    
+            li {
+                margin-bottom: 3px;
+                padding: 0 20px ;
+
+                &.active {
+                    background-color: $color-orange;
+                    color: black;
+
+                    span {
+                        color: black;
+                    }
+                }
+            }
+
+
+            span {
+                margin-right: 10px;
+                font-weight: bold;
+                font-size: 18px;
+                color: $color-orange;
+            }
+
+            .gold {
+                color: rgb(255, 208, 0);
+            }
+        }
+    }
+}

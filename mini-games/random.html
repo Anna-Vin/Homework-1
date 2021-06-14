@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RNG</title>
+</head>
+<body>
+    <div class="container rng" style="text-align: center;">
+        <h1>Random number generator</h1>
+        <div class="form form-group">
+            <label for="min">Min</label>
+            <input class="form-control min" type="number" id="min"><br>
+            <label for="max">Max</label>
+            <input  class="form-control max" type="number" id="max"><br>
+            <label for="quantity">Quantity</label>
+            <input class="form-control quantity" type="number" id="quantity"> <br>
+            <button class="btn btn-dark generate">Generate</button>
+        </div>
+        <div class="result card" hidden>
+
+        </div>
+    </div>
+    <script src="./js/rng.js"></script>
+</body>
+</html>

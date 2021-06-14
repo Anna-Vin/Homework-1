@@ -1,0 +1,32 @@
+.rng {
+    margin-top: 8%;
+    h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label,
+        button {
+            text-shadow: 0 0 10px #ffffff;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+
+        .form-control {
+            max-width: 500px;
+        }
+    }
+
+    .result {
+        margin: 0 auto;
+        padding: 40px;
+        max-width: 500px;
+        font-size: 24px;
+        color: rgb(27, 27, 27);
+    }
+}

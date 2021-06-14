@@ -1,0 +1,128 @@
+body {
+    font: 14px/1.5 $font-main;
+    color: $color-font;
+    min-height: 100vh;
+    // background-color: #040231;
+    background: rgb(63,191,251);
+    background: radial-gradient(circle, rgba(63,191,251,1) 0%, rgba(2,25,49,1) 50%);
+
+    @include screen(md) {
+        padding: 40px;
+    }
+}
+
+.main.container {
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button {
+    display: block;
+    background-color: transparent;
+    color: $color-font;
+    outline: none;
+    border: 0;
+    padding: 20px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &-orange {
+        background-color: $color-orange;
+        position: relative;
+        min-width: 170px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -40px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 28px 40px 28px 0;
+            border-color: transparent $color-orange transparent transparent;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -40px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 28px 0 28px 40px;
+            border-color: transparent transparent transparent $color-orange;
+        }
+    }
+
+    &-green {
+        background-color: $color-green;
+        min-width: 170px;
+        position: relative;
+        margin-right: 100px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -40px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 28px 40px 28px 0;
+            border-color: transparent $color-green transparent transparent;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -40px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 28px 0 28px 40px;
+            border-color: transparent transparent transparent $color-green;
+        }
+    }
+
+    &:hover {
+        text-shadow: 0 0 10px #FFFFFF;
+    }
+}
+
+
+.options {
+    height: 90vh;
+    padding-top: 30vh;
+    align-items:baseline;
+}
+
+.card {
+    
+    img {
+        margin-bottom: 20px;
+        height: 250px;
+    }
+    
+    .card-body {
+        text-align: center;
+
+        h1 {
+            text-transform: uppercase;
+            color: rgb(243, 243, 243);
+            text-shadow: 1px 3px 0 #9696966b, 1px 13px 5px #aba8a873;
+        }
+    }
+
+    
+}

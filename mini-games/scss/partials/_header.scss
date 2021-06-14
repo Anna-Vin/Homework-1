@@ -1,0 +1,22 @@
+.header {
+    margin-bottom: 20px;
+
+    .buttons {
+        justify-content: center;
+    }
+    
+    .timer{
+        text-align: center;
+
+        h2 {
+            display: inline-block;
+            padding-top: 13px;
+            width: 70px;
+            height: 70px;
+            background-color: rgb(14, 14, 14);
+            border-radius: 50%;
+            border: 3px solid $color-font;
+        }
+    }
+}
+
